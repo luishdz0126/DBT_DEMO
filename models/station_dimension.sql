@@ -8,7 +8,7 @@ WITH BIKE AS
     START_LNG AS start_station_lng
     FROM {{ source('demo', 'bike') }}
     WHERE RIDE_ID != 'ride_id'
-    limit 10
+    
 )
 SELECT
 *
